@@ -8,9 +8,13 @@ const Countries = () => {
     const [countries, setCountries] = useState([]); //Cuando se recorre un arreglo se usa el array
     //En ese caso como map se usa con arreglo se tuvo que poner un [] en el estado.
     const [continent, setContinent] = useState("");
+    const [isLoading, setIsLoading] = useState(true);
     useEffect(() =>{
         axios.get('https://restcountries.com/v3.1/all')
-        .then(res => setCountries(res.data))
+        .then((res) => {
+            setIsLoading(false);
+            setCountries(res.data);
+        })
     },[])
     const sortedCountries = countries.sort((a, b) => a.name.common.localeCompare(b.name.common))
     const filterAfrica = sortedCountries.filter((country) => country.continents[0] === "Africa");
@@ -32,6 +36,9 @@ const Countries = () => {
                 <button onClick={() => setContinent("Oceania")}>Oceania</button>
                 <button onClick={() => setContinent("All")}>All Continent</button>
             </div>
+            { isLoading ? ( 
+            <div className='loading'><h1>Loading...</h1></div>
+            ) : (
             <div className='CountriesContent'>
                 <CountriesDetails  
                 continent={continent} 
@@ -45,6 +52,7 @@ const Countries = () => {
                 filterOceania={filterOceania}
                 />
             </div>
+            )}
         </div>
     );
 };

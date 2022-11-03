@@ -45,9 +45,10 @@
 }
 
   .countries img{
-    width: 175px;
+    width: fit-content;
     height: 100px;
-    margin-bottom: 5px;
+    margin: auto;
+    text-align: center;
   }
 
   .CountriesContent{

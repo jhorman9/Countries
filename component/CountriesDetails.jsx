@@ -1,6 +1,8 @@
 import React from 'react';
 import CountryItems from './CountryItems';
 
+//Se puede usar continent, dentro de continent hay varios elementos.
+//se puede apreciar con un console.log(element)
 const CountriesDetails = (continent) => {
     console.log(continent)
     if(continent.continent === "Africa"){

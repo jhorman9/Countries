@@ -1,7 +1,7 @@
 import React from 'react';
 import CountryItems from './CountryItems';
 
-const CountriesDetails = (continent, countries, filterAfrica, filterAntarctica, filterAsia,filterEurope,filterNorthAmerica, filterOceania, filterSouthAmerica) => {
+const CountriesDetails = (continent) => {
     console.log(continent)
     if(continent.continent === "Africa"){
         return(

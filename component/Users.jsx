@@ -2,7 +2,6 @@ import React from "react";
 import usersList from "../src/user.json";
 
 const Users = () => {
-  console.log(usersList);
 
   return (
     <ul>

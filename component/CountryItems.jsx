@@ -1,7 +1,6 @@
 import React from 'react';
 
 const CountryItems = ({country}) => {
-    console.log(country);
     return (
         <div className='countries'>
             <div style={{marginBottom:"5px"}}><b>{country.altSpellings[1] === undefined ? country.name.official : country.altSpellings[1]}</b></div>

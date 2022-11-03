@@ -2,7 +2,6 @@ import quotesList from "../src/quote.json";
 import QuoteItem from "./QuoteItem";
 
 function Quotes() {
-  console.log(quotesList);
 
   return (
     <div className="App">

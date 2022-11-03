@@ -71,19 +71,22 @@
   }
 
   button{
-    padding: 5px 10px;
-    background-color: beige;
+    padding: 10px 15px;
+    background-color: #cad2c5;
     outline: none;
     border: none;
     color: black;
     cursor: pointer;
+    font-weight: 900;
   }
   button:nth-child(odd):hover{
-    background-color: blueviolet;
+    background-color: #0d1b2a;
+    color: whitesmoke;
   }
 
   button:nth-child(even):hover{
-    background-color: brown;
+    background-color: #353535;
+    color: whitesmoke;
   }
   
 .loading{

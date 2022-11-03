@@ -5,7 +5,12 @@
 
   body{
     margin: 0;
-    background-color: black;
+    width: 100%;
+    height: 100vh;
+    background-image: url('https://i.pinimg.com/originals/31/d6/ca/31d6ca42b7769484df5186d3d5c79a5b.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
   }
   
   .App {

@@ -78,6 +78,13 @@
     color: black;
     cursor: pointer;
   }
+  button:nth-child(odd):hover{
+    background-color: blueviolet;
+  }
+
+  button:nth-child(even):hover{
+    background-color: brown;
+  }
   
 .loading{
     width: 100%;
